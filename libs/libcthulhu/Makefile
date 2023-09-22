@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module libcthulhu provides functions and datastructures t
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v0.25.0
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/libcthulhu.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/libcthulhu.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -22,7 +22,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/libcthulhu
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/libcthulhu
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libocispec

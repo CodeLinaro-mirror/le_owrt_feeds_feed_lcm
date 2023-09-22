@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=High level LCM component
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v2.0.0
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/timingila.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -29,7 +29,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/timingila
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila
   DEPENDS += +libsahtrace
   DEPENDS += +libamxc
   DEPENDS += +libamxp

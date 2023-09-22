@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module timingila-rlyeh provides rlyeh support as a packag
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v1.0.2
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/timingila-rlyeh.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila-rlyeh.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/timingila-rlyeh
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila-rlyeh
   DEPENDS += +libamxc
   DEPENDS += +libamxm
   DEPENDS += +libamxp

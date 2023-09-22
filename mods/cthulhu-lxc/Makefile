@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module Cthulhu-LXC provides LXC support as a backend to C
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v0.7.3
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/cthulhu-lxc.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/cthulhu-lxc.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -22,7 +22,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/cthulhu-lxc
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/cthulhu-lxc
   DEPENDS += +libamxc
   DEPENDS += +libamxm
   DEPENDS += +libamxj

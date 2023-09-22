@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Rlyeh is the local LCM repository
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v2.2.0
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/rlyeh.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/rlyeh.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -29,7 +29,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/rlyeh
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/rlyeh
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd

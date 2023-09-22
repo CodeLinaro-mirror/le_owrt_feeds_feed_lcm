@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module librlyeh provides functions and datastructures to 
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v1.1.1
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/librlyeh.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/librlyeh.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -22,7 +22,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Libraries
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/librlyeh
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/librlyeh
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +yajl

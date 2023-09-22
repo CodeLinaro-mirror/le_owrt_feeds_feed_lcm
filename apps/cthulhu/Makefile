@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v3.2.1
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/cthulhu.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/cthulhu.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -29,7 +29,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/cthulhu
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/cthulhu
   DEPENDS += +libamxc
   DEPENDS += +libamxp
   DEPENDS += +libamxd

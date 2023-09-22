@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module timingila-cthulhu provides cthulhu support as a co
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=v1.2.1
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/components/timingila-cthulhu.git
+PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila-cthulhu.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Modules
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/components/timingila-cthulhu
+  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila-cthulhu
   DEPENDS += +libamxc
   DEPENDS += +libamxm
   DEPENDS += +libamxp

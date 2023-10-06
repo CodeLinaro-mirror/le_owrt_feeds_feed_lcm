@@ -1,16 +1,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila
-PKG_VERSION:=v2.0.0
+PKG_VERSION:=v2.0.2
 SHORT_DESCRIPTION:=High level LCM component
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=v2.0.0
-PKG_SOURCE_URL:=https://$(SAH_GIT_USER):$(SAH_GIT_TOKEN)@$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila.git
-PKG_MIRROR_HASH:=skip
-PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE:=timingila-v2.0.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/timingila/-/archive/v2.0.2
+PKG_HASH:=97a4db28e1cb3cf6e9486d73a3cf7ef9c943cfee6b2cc51a199eb1db55242ce9
+PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-v2.0.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:=
+PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 COMPONENT:=timingila
@@ -29,7 +28,7 @@ define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
   SUBMENU:=Applications
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://$(SAH_GIT)/$(SAH_GIT_GROUP)/timingila
+  URL:=https://gitlab.com/prpl-foundation/lcm/applications/timingila
   DEPENDS += +libsahtrace
   DEPENDS += +libamxc
   DEPENDS += +libamxp
@@ -51,9 +50,6 @@ endef
 
 define Build/Install
 	$(call Build/Install/Default, install INSTALL=install D=$(PKG_INSTALL_DIR) DEST=$(PKG_INSTALL_DIR) STAGINGDIR=$(STAGING_DIR) CONFIGDIR=$(STAGING_DIR) PV=$(PKG_VERSION) PKG_CONFIG_LIBDIR=$(STAGING_DIR)/usr/lib/pkgconfig LIBDIR=/usr/lib INSTALL_LIB_DIR=/lib INSTALL_BIN_DIR=/bin RAW_VERSION=$(PKG_VERSION) HARDCO_HAL_DIR=$(STAGING_DIR)/usr/include CONFIG_SAH_SERVICES_TIMINGILA_INIT_START=$(CONFIG_SAH_SERVICES_TIMINGILA_INIT_START) CONFIG_SAH_SERVICES_TIMINGILA_INIT_STOP=$(CONFIG_SAH_SERVICES_TIMINGILA_INIT_STOP) CONFIG_SAH_SERVICES_TIMINGILA_INIT_ADAPTERS=$(CONFIG_SAH_SERVICES_TIMINGILA_INIT_ADAPTERS) CONFIG_SAH_SERVICES_TIMINGILA_ADAPTER_PACKAGER=$(CONFIG_SAH_SERVICES_TIMINGILA_ADAPTER_PACKAGER) CONFIG_SAH_SERVICES_TIMINGILA_ADAPTER_CONTAINER=$(CONFIG_SAH_SERVICES_TIMINGILA_ADAPTER_CONTAINER))
-	find $(PKG_INSTALL_DIR) -name *.a -exec rm {} +;
-	find $(PKG_INSTALL_DIR) -name *.h -exec rm {} +;
-	find $(PKG_INSTALL_DIR) -name *.pc -exec rm {} +;
 
 	$(call SAHInit/Install)
 endef
@@ -67,6 +63,9 @@ define Package/$(PKG_NAME)/install
 	if [ -d ./files ]; then \
 		$(CP) ./files/* $(1)/; \
 	fi
+	find $(1) -name *.a -exec rm {} +;
+	find $(1) -name *.h -exec rm {} +;
+	find $(1) -name *.pc -exec rm {} +;
 endef
 
 define Package/$(PKG_NAME)/config

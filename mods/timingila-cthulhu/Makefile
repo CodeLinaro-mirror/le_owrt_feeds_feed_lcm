@@ -20,7 +20,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=SoftAtHome
-  SUBMENU:=Modules
+  SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-cthulhu
   DEPENDS += +libamxc

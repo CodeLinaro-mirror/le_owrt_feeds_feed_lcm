@@ -1,16 +1,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libocispec
-PKG_VERSION:=dev_fix_autotools
-SHORT_DESCRIPTION:=A library for easily parsing of OCI runtime and OCI image files from C
+PKG_VERSION:=2021-05-15
+SHORT_DESCRIPTION:=library for accessing OCI runtime and image spec files
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=46b870958a39547026c5dc9a044951e232ecbd9c
 PKG_SOURCE_URL:=https://github.com/containers/libocispec.git
-PKG_MIRROR_HASH:=adaafef03fe2cb85207fc1033e29d7f98acd4d32fbcd12461d01f4efc2cbc63e
+PKG_MIRROR_HASH:=11294acb85705cc4ce0176f18239de4e9ad1c48e3f818fcfa239dbbc20c2da40
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:=SAH BSD-2-Clause-Patent
-PKG_LICENSE_FILES:=LICENSE.SAH LICENSE.BSD
+PKG_LICENSE:=BSD-2-Clause-Patent
+PKG_LICENSE_FILES:=LICENSE.BSD
 
 PKG_RELEASE:=1
 
@@ -20,7 +20,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
 	CATEGORY:=SoftAtHome
-	SUBMENU:=Libraries
+	SUBMENU:=Life Cycle Management (LCM)
 	TITLE:=$(SHORT_DESCRIPTION)
 	URL:=https://github.com/containers/libocispec.git
 	DEPENDS += +yajl

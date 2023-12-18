@@ -11,14 +11,6 @@ config SAH_SERVICES_CTHULHU
     bool "Build Cthulhu"
     default y
 
-config SAH_SERVICES_CTHULHU_DATASIZE
-    int "Default data size of the generic sandbox (in kb)"
-    default 5120
-
-config SAH_SERVICES_CTHULHU_LCM_STORAGE_LOCATION
-    string "Default LCM storage location"
-    default "/usr/share"
-
 config SAH_SERVICES_CTHULHU_INIT_START
     int "Cthulhu plugin start up order"
     default 99

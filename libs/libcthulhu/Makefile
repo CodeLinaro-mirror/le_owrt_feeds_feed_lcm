@@ -1,30 +1,30 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libcthulhu
-PKG_VERSION:=v0.25.1
+PKG_VERSION:=v0.26.0
 SHORT_DESCRIPTION:=The module libcthulhu provides functions and datastructures that are shared between Cthulhu and its backends
 
-PKG_SOURCE:=libcthulhu-v0.25.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcthulhu/-/archive/v0.25.1
-PKG_HASH:=1591e7327f156ab106fa0b81772c819b77ec0aa4734e87fec9ed6aee8f5ba1de
-PKG_BUILD_DIR:=$(BUILD_DIR)/libcthulhu-v0.25.1
+PKG_SOURCE:=libcthulhu-v0.26.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcthulhu/-/archive/v0.26.0
+PKG_HASH:=6a97a2cbf7ae5952b918ec6387f8824b21df6352f9b4341b48b62d8d47ec4e1a
+PKG_BUILD_DIR:=$(BUILD_DIR)/libcthulhu-v0.26.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
-PKG_LICENSE:=BSD-2-Clause-Patent
-PKG_LICENSE_FILES:=LICENSE
-
+PKG_LICENSE:=BSD-2-Clause-Patent BSD-2-Clause-Patent
+PKG_LICENSE:=LICENSE.BSD LICENSE.BSD
 
 PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=SoftAtHome
+  CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcthulhu
   DEPENDS += +libamxc
   DEPENDS += +libamxj
   DEPENDS += +libocispec
+  DEPENDS += +libsahtrace
   MENU:=1
 endef
 

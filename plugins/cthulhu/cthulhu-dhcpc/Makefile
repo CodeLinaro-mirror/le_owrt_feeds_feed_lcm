@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-dhcpc
-PKG_VERSION:=v1.2.3
+PKG_VERSION:=v1.2.4
 SHORT_DESCRIPTION:=Add dhcp client support to Cthulhu sandboxes
 
-PKG_SOURCE:=cthulhu-dhcpc-v1.2.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-dhcpc/-/archive/v1.2.3
-PKG_HASH:=c57f116bda1f82da9254670e1f7e3ff1a0160184bf6548820ce28dfb7e3c204c
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-dhcpc-v1.2.3
+PKG_SOURCE:=cthulhu-dhcpc-v1.2.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-dhcpc/-/archive/v1.2.4
+PKG_HASH:=3c7050e6747f0a05cc3adc11e463e6bafb9c865406f515470e4d4d9242ad9313
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-dhcpc-v1.2.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +18,7 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=SoftAtHome
+  CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-dhcpc

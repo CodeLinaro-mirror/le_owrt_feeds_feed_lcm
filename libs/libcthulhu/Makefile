@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libcthulhu
-PKG_VERSION:=v0.26.0
+PKG_VERSION:=v0.26.1
 SHORT_DESCRIPTION:=The module libcthulhu provides functions and datastructures that are shared between Cthulhu and its backends
 
-PKG_SOURCE:=libcthulhu-v0.26.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcthulhu/-/archive/v0.26.0
-PKG_HASH:=6a97a2cbf7ae5952b918ec6387f8824b21df6352f9b4341b48b62d8d47ec4e1a
-PKG_BUILD_DIR:=$(BUILD_DIR)/libcthulhu-v0.26.0
+PKG_SOURCE:=libcthulhu-v0.26.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcthulhu/-/archive/v0.26.1
+PKG_HASH:=8df6ee5dd835b345ce2563f3f3b71ab14d170dfdb9c55b8de2c14fbb3f0089d2
+PKG_BUILD_DIR:=$(BUILD_DIR)/libcthulhu-v0.26.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent BSD-2-Clause-Patent
 PKG_LICENSE:=LICENSE.BSD LICENSE.BSD

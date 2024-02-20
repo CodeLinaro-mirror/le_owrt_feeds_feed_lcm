@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=librlyeh
-PKG_VERSION:=v1.1.3
+PKG_VERSION:=v1.1.4
 SHORT_DESCRIPTION:=The module librlyeh provides functions and datastructures to interact with OCI registries
 
-PKG_SOURCE:=librlyeh-v1.1.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.1.3
-PKG_HASH:=4530ad8d7221326a885b362012050f46bf938c235c45d4690752ce0dc7f9861d
-PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.1.3
+PKG_SOURCE:=librlyeh-v1.1.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.1.4
+PKG_HASH:=1e4f9adc005ad3292db577849621d36680ed2f5a595d87e71071e0a8b756bf56
+PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.1.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +18,7 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=SoftAtHome
+  CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh

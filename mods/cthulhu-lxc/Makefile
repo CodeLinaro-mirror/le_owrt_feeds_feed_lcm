@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-lxc
-PKG_VERSION:=v0.9.3
+PKG_VERSION:=v0.9.5
 SHORT_DESCRIPTION:=The module Cthulhu-LXC provides LXC support as a backend to Cthluhu
 
-PKG_SOURCE:=cthulhu-lxc-v0.9.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/archive/v0.9.3
-PKG_HASH:=376222f158754acab90e3dabcc45a56fe9871458fac352de3ddec2bab9cd6d12
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lxc-v0.9.3
+PKG_SOURCE:=cthulhu-lxc-v0.9.5.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/archive/v0.9.5
+PKG_HASH:=d5bf02af5fb7de6ffb644c9d487c3231775b4d74fc68be84f62bebf7990f968b
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lxc-v0.9.5
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +18,7 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=SoftAtHome
+  CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc

@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module libcthulhu provides functions and datastructures t
 
 PKG_SOURCE:=libcthulhu-v0.26.1.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcthulhu/-/archive/v0.26.1
-PKG_HASH:=8df6ee5dd835b345ce2563f3f3b71ab14d170dfdb9c55b8de2c14fbb3f0089d2
+PKG_HASH:=a43698438377d1bdf0d502172d49ea94cfb5bcd15ac1e30562c39003dbeda72c
 PKG_BUILD_DIR:=$(BUILD_DIR)/libcthulhu-v0.26.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent BSD-2-Clause-Patent

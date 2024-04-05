@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=liblcm
-PKG_VERSION:=v0.1.6
+PKG_VERSION:=v0.2.0
 SHORT_DESCRIPTION:=The module liblcm provides common functions and datastructures for LCM components
 
-PKG_SOURCE:=liblcm-v0.1.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.1.6
-PKG_HASH:=c48b621349bdb78a80c123d4febb0149f9750d0c3efe8208e757edf3510f2dad
-PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.1.6
+PKG_SOURCE:=liblcm-v0.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.2.0
+PKG_HASH:=d7c472c1ff859bdd92bb71b53c7515dccd2c43201279b5d220c284c29505e55d
+PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,7 +18,7 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=SoftAtHome
+  CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm

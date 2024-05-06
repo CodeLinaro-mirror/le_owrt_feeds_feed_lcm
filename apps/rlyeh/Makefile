@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=rlyeh
-PKG_VERSION:=v2.3.2
+PKG_VERSION:=v2.3.3
 SHORT_DESCRIPTION:=Rlyeh is the local LCM repository
 
-PKG_SOURCE:=rlyeh-v2.3.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.3.2
-PKG_HASH:=410ea87f80049b926c5deba7abee3527ec73cf1818c88f64a9ae78a445ba41fe
-PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.3.2
+PKG_SOURCE:=rlyeh-v2.3.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.3.3
+PKG_HASH:=da2fc4979894413b711be600e74235b8ace3363a6c82afca3f4de80886ca733b
+PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.3.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -25,7 +25,7 @@ endef
 include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
-  CATEGORY:=SoftAtHome
+  CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh

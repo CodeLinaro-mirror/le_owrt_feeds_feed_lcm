@@ -12,7 +12,7 @@ config SAH_SERVICES_RLYEH
     default y
 
 config SAH_SERVICES_RLYEH_LCM_STORAGE_LOCATION
-    string ""
+    string "Prefix used to determine the location where the LCM data is stored"
     default "/usr/share"
 
 config SAH_SERVICES_RLYEH_ORDER

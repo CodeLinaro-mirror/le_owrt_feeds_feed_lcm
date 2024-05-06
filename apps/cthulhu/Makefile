@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu
-PKG_VERSION:=v3.7.7
+PKG_VERSION:=v3.7.8
 SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
-PKG_SOURCE:=cthulhu-v3.7.7.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v3.7.7
-PKG_HASH:=c3485495d499a88236a42870ab1b7c1258c0009df88ed2a2e7dcf0198146d253
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v3.7.7
+PKG_SOURCE:=cthulhu-v3.7.8.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v3.7.8
+PKG_HASH:=5f9a0bcb3ef004ff0bb400af45a059dd78dff31d577d9799b5bb2b27de2a63a5
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v3.7.8
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Add onboarding module
 
 PKG_SOURCE:=cthulhu-onboarding-v1.0.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-onboarding/-/archive/v1.0.0
-PKG_HASH:=skip
+PKG_HASH:=6a8ff4ec1eed5a1f74ac92c2272bd48d83af69c11ecd97d954be6226607d115b
 PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-onboarding-v1.0.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent

@@ -27,6 +27,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxp
   DEPENDS += +libamxd
   DEPENDS += +libamxp
+  DEPENDS += +libsahtrace
   MENU:=1
 endef
 

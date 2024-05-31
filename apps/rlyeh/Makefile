@@ -36,6 +36,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxm
   DEPENDS += +libsahtrace
   DEPENDS += +librlyeh
+  DEPENDS += +liblcm
   MENU:=1
 endef
 

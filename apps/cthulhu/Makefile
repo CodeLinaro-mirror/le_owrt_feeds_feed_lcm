@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu
-PKG_VERSION:=v3.7.9
+PKG_VERSION:=v3.7.10
 SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
-PKG_SOURCE:=cthulhu-v3.7.9.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v3.7.9
-PKG_HASH:=f1eef19ab46675307c2378869f16e5dcf54a7e15a49f5291910f309ee76476d2
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v3.7.9
+PKG_SOURCE:=cthulhu-v3.7.10.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v3.7.10
+PKG_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v3.7.10
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -18,8 +18,8 @@ PKG_RELEASE:=1
 
 define SAHInit/Install
 	install -d ${PKG_INSTALL_DIR}/etc/rc.d/
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/ ${PKG_INSTALL_DIR}/etc/rc.d/S$(CONFIG_SAH_SERVICES_CTHULHU_INIT_START)
-	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/ ${PKG_INSTALL_DIR}/etc/rc.d/K$(CONFIG_SAH_SERVICES_CTHULHU_INIT_STOP)
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/$(COMPONENT) ${PKG_INSTALL_DIR}/etc/rc.d/S$(CONFIG_SAH_SERVICES_CTHULHU_INIT_START)$(COMPONENT)
+	ln -sfr ${PKG_INSTALL_DIR}/etc/init.d/$(COMPONENT) ${PKG_INSTALL_DIR}/etc/rc.d/K$(CONFIG_SAH_SERVICES_CTHULHU_INIT_STOP)$(COMPONENT)
 endef
 
 include $(INCLUDE_DIR)/package.mk

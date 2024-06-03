@@ -37,6 +37,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxo
   DEPENDS += +mod-dmproxy
   DEPENDS += +libuuid
+  DEPENDS += +liblcm
   MENU:=1
 endef
 

@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=liblcm
-PKG_VERSION:=v0.2.0
+PKG_VERSION:=v0.2.3
 SHORT_DESCRIPTION:=The module liblcm provides common functions and datastructures for LCM components
 
-PKG_SOURCE:=liblcm-v0.2.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.2.0
-PKG_HASH:=352a24ca27803752bf860b5183f394f03b9b8d11947e79b1ffb40a7e1b1c2159
-PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.2.0
+PKG_SOURCE:=liblcm-v0.2.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.2.3
+PKG_HASH:=2a7ce02d0bfc79e776bc90076dafaefe18911ebbaf610cb72945656c210f5308
+PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.2.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

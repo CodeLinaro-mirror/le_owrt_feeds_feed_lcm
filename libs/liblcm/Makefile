@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module liblcm provides common functions and datastructure
 
 PKG_SOURCE:=liblcm-v0.2.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.2.0
-PKG_HASH:=d7c472c1ff859bdd92bb71b53c7515dccd2c43201279b5d220c284c29505e55d
+PKG_HASH:=352a24ca27803752bf860b5183f394f03b9b8d11947e79b1ffb40a7e1b1c2159
 PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent

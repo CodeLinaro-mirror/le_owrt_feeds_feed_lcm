@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=librlyeh
-PKG_VERSION:=v1.1.5
+PKG_VERSION:=v1.2.0
 SHORT_DESCRIPTION:=The module librlyeh provides functions and datastructures to interact with OCI registries
 
-PKG_SOURCE:=librlyeh-v1.1.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.1.5
-PKG_HASH:=4f3ac32b18a69649a4ed2baa5158c0193d67d698d05ec2ca16d87dc27247ef23
-PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.1.5
+PKG_SOURCE:=librlyeh-v1.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.2.0
+PKG_HASH:=3a690f154db6d56d0df3d45d9873dd01c8ad3aab31813ec555e54053a34215f0
+PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -24,12 +24,13 @@ define Package/$(PKG_NAME)
   URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh
   DEPENDS += +libamxc
   DEPENDS += +libamxj
+  DEPENDS += +libamxm
   DEPENDS += +yajl
   DEPENDS += +libocispec
   DEPENDS += +libopenssl
   DEPENDS += +curl
   DEPENDS += +libsahtrace
-  DEPENDS += +libgpgme
+  DEPENDS += +liblcm
   MENU:=1
 endef
 

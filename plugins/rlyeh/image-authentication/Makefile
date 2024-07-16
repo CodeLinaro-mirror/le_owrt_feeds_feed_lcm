@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Rlyeh OCI image authentication plugin
 
 PKG_SOURCE:=image-authentication-v0.1.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication/-/archive/v0.1.0
-PKG_HASH:=skip
+PKG_HASH:=275e5337eafd2b01167e4351410fd3895da30068dc8522264217af2d83cb4f4a
 PKG_BUILD_DIR:=$(BUILD_DIR)/image-authentication-v0.1.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent

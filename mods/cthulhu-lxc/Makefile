@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-lxc
-PKG_VERSION:=v0.9.6
+PKG_VERSION:=v0.10.0
 SHORT_DESCRIPTION:=The module Cthulhu-LXC provides LXC support as a backend to Cthluhu
 
-PKG_SOURCE:=cthulhu-lxc-v0.9.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/archive/v0.9.6
-PKG_HASH:=cbd3fdb7ee16136170c101ea49f5014edda8db18d83ac769e3fc306eda215372
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lxc-v0.9.6
+PKG_SOURCE:=cthulhu-lxc-v0.10.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/archive/v0.10.0
+PKG_HASH:=07bfe881bee0fa170cd52d2668b90071116e02ae2c0eb0e0aa2ae962a1743712
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lxc-v0.10.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

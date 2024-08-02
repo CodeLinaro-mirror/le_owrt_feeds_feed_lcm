@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v3.5.0 - 2024-08-02(20:02:14 +0000)
+
+### Other
+
+- [cthulhu-lxc](https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc): Add container execute command capability
+
 ## Release v3.4.0 - 2024-07-18(19:34:28 +0000)
 
 ### Removed

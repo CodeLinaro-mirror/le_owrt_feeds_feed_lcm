@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Release stable-3.1 - 2024-09-25(14:38:53 +0000)
+
+### Other
+
+- [cthulhu-plugin-usp](https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp): Add USP RBAC support
 
 ## Release v3.5.1 - 2024-08-06(14:38:53 +0000)
 

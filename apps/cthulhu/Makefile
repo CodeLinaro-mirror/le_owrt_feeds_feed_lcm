@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu
-PKG_VERSION:=v3.9.0
+PKG_VERSION:=v4.0.0
 SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
-PKG_SOURCE:=cthulhu-v3.9.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v3.9.0
-PKG_HASH:=857749db7e5b6c7a20804cae9cb300090f52b4d8f3601aa0dab16ebcab7a4d2d
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v3.9.0
+PKG_SOURCE:=cthulhu-v4.0.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v4.0.0
+PKG_HASH:=6e7cb493ac13df003f675f21c013f5a2533d583e8176c2657eb6f0f4d2b8265f
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v4.0.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -38,8 +38,8 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxb
   DEPENDS += +libsahtrace
   DEPENDS += +yajl
-  DEPENDS += +libcthulhu
   DEPENDS += +liblcm
+  DEPENDS += +libcthulhu
   DEPENDS += +libarchive
   DEPENDS += +libocispec
   DEPENDS += +libnl-core
@@ -50,6 +50,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +kmod-fs-ext4
   DEPENDS += +f2fsck
   DEPENDS += +resize2fs
+  DEPENDS += +libacl
   MENU:=1
 endef
 

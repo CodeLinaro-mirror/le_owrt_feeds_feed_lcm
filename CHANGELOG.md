@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## Release v3.7.0 - 2024-10-11(09:33:00 +0000)
+
+### Other
+
+- [cthulhu-plugin-usp](https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp): Add support for USP Role Based Access Control (RBAC)
 
 ## Release v3.5.2 - 2024-08-26(21:35:04 +0000)
 

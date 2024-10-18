@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=Rlyeh is the local LCM repository
 
 PKG_SOURCE:=rlyeh-v2.5.0.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.5.0
-PKG_HASH:=skip
+PKG_HASH:=fadef5ddae2574c8f2236b36f149d9aa4c672af8da2668499c5d78b6a9c9cbb2
 PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.5.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent

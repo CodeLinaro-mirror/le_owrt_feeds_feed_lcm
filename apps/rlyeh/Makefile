@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=rlyeh
-PKG_VERSION:=v2.4.0
+PKG_VERSION:=v2.5.0
 SHORT_DESCRIPTION:=Rlyeh is the local LCM repository
 
-PKG_SOURCE:=rlyeh-v2.4.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.4.0
-PKG_HASH:=5c7d10b18d6aed200df2540600521755009badedf0d060896fa8a3e13a2141fa
-PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.4.0
+PKG_SOURCE:=rlyeh-v2.5.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.5.0
+PKG_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.5.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

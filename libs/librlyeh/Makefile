@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=librlyeh
-PKG_VERSION:=v1.2.0
+PKG_VERSION:=v1.3.0
 SHORT_DESCRIPTION:=The module librlyeh provides functions and datastructures to interact with OCI registries
 
-PKG_SOURCE:=librlyeh-v1.2.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.2.0
-PKG_HASH:=3a690f154db6d56d0df3d45d9873dd01c8ad3aab31813ec555e54053a34215f0
-PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.2.0
+PKG_SOURCE:=librlyeh-v1.3.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.3.0
+PKG_HASH:=d4203969df9153c0621f20d46d439b3585daffe7890d2ea7c220534f87de5631
+PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.3.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

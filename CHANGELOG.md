@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## Release v4.0.1 - 2024-10-27(09:23:37 +0000)
+
+### Other
+
+- [cthulhu-lxc](https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc): Env variables not shared any more with the containers
+
 ## Release v4.0.0 - 2024-10-21(09:08:30 +0000)
 
 ### Other

@@ -1,12 +1,16 @@
 include $(TOPDIR)/rules.mk
  
 PKG_NAME:=libcelephais
-PKG_VERSION:=0.1
+PKG_VERSION:=v1.0.1
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git@gitlab.com:prpl-foundation/lcm/libraries/libcelephais.git
-PKG_SOURCE_VERSION:=fa18b04aa9f4a934d473f4927a13c304fa0adbd1
+PKG_SOURCE_VERSION:=0e1346781983a3bbfd5c58ab2e7838a33472e3c4
+
+PKG_MAINTAINER:=Consult Red <info@consult.red>
+PKG_LICENSE:=BSD-2-Clause-Patent
+PKG_LICENSE_FILES:=LICENSE
 
 include $(INCLUDE_DIR)/package.mk
 

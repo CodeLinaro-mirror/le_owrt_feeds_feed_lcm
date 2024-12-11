@@ -1,12 +1,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila-celephais
-PKG_VERSION:=v0.0.1
+PKG_VERSION:=v1.0.1
 SHORT_DESCRIPTION:=The module timingila-celephais provides celephais support as a packager backend to timingila
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git@gitlab.com:prpl-foundation/lcm/modules/timingila-celephais.git
 PKG_SOURCE_VERSION:=a795dc3b8793ea69717f067551c69ccc98e69002
+
+PKG_MAINTAINER:=Consult Red <info@consult.red>
+PKG_LICENSE:=BSD-2-Clause-Patent
+PKG_LICENSE_FILES:=LICENSE
 
 PKG_RELEASE:=1
 PKG_BUILD_DEPENDS += libcelephais

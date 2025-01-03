@@ -10,6 +10,7 @@ menu "Select cthulhu build options"
 config SAH_SERVICES_CTHULHU
     bool "Build Cthulhu"
     default y
+    select USE_FS_ACL_ATTR
 
 config SAH_SERVICES_CTHULHU_INIT_START
     int "Cthulhu plugin start up order"

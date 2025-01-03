@@ -1,13 +1,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu
-PKG_VERSION:=v4.1.0
+PKG_VERSION:=mainline-3.2_v0.1.0
 SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
-PKG_SOURCE:=cthulhu-v4.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v4.1.0
-PKG_HASH:=6af2bd0e0df90735489c5c0bda43c8223a51d23f937eaea91f0c735a4384cb37
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v4.1.0
+PKG_SOURCE:=cthulhu-mainline-3.2_v0.1.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/mainline-3.2_v0.1.0
+PKG_HASH:=2952655f51dfa3ce0232419b0e749f01925d30b66c2126b2c4bab8520a7382e8
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-mainline-3.2_v0.1.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -51,6 +51,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +f2fsck
   DEPENDS += +resize2fs
   DEPENDS += +libacl
+  DEPENDS += +acl
   MENU:=1
 endef
 

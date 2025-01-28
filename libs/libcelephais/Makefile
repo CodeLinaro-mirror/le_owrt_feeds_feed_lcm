@@ -5,7 +5,7 @@ PKG_VERSION:=v1.0.1
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git@gitlab.com:prpl-foundation/lcm/libraries/libcelephais.git
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/libcelephais.git
 PKG_SOURCE_VERSION:=0e1346781983a3bbfd5c58ab2e7838a33472e3c4
 
 PKG_MAINTAINER:=Consult Red <info@consult.red>

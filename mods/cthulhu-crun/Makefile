@@ -5,7 +5,7 @@ PKG_VERSION:=v1.0.0
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git@gitlab.com:prpl-foundation/lcm/modules/cthulhu-crun.git
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-crun.git
 PKG_SOURCE_VERSION:=ace3e2414457dc6ebdbebe7630abb2751839ba43
 
 PKG_MAINTAINER:=Consult Red <info@consult.red>

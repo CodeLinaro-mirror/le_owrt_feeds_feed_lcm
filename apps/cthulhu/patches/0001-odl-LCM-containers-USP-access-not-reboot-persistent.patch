@@ -1,0 +1,39 @@
+From 36724d5c538f43f1a431a1ed8d9fecd9f3d82cd8 Mon Sep 17 00:00:00 2001
+From: Nabil BIZID <nabil.bizid@softathome.com>
+Date: Tue, 28 Jan 2025 12:25:20 +0100
+Subject: [PATCH] odl: LCM containers USP access not reboot persistent
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Problem: When Assigning the USP role to a container at install/update time,
+the container will be able to have USP access but won't have it anymore
+after a reboot or restart of the agent.
+
+Fix: Make the internal configuration parameters used to store the previously
+applied configuration reboot persistent
+
+Issue: LCM-834 Containers lose USP endpoint ID environment variable and broker socket mounts after a reboot
+Issue: LCMFT-418 LCM container USP access not reboot persistent
+
+Fixes: LCM-834
+Upstream-Status: Submitted [https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/merge_requests/15]
+Signed-off-by: Nabil BIZID <nabil.bizid@softathome.com>
+Signed-off-by: Petr Štetiar <petr.stetiar@prplfoundation.org>
+---
+ odl/cthulhu_definition.odl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/odl/cthulhu_definition.odl b/odl/cthulhu_definition.odl
+index 0ae8f7614757..b5077613378e 100644
+--- a/odl/cthulhu_definition.odl
++++ b/odl/cthulhu_definition.odl
+@@ -418,7 +418,7 @@
+                 /** Optional USP role names **/
+                 %persistent %read-only csv_string OptionalRoles;
+                 /** Assigned USP role paths **/
+-                %read-only csv_string AssignedRoles;
++                %persistent %read-only csv_string AssignedRoles;
+                 /** StartTime will be calculated when the container starts running */
+                 datetime StartTime;
+                 /** reference to all installed layers that compose the rootfs */

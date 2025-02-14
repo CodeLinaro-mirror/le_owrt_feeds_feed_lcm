@@ -4,10 +4,12 @@ PKG_NAME:=timingila-rlyeh
 PKG_VERSION:=v1.1.0
 SHORT_DESCRIPTION:=The module timingila-rlyeh provides rlyeh support as a packager backend to timingila
 
-PKG_SOURCE:=timingila-rlyeh-v1.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-rlyeh/-/archive/v1.1.0
-PKG_HASH:=89716013e3a111c0c5a528f2f6f19445c924bda45e720f6d2d9385427ee687c2
-PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-rlyeh-v1.1.0
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=180d5cc1265211565a903124283556fd67225baa
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-rlyeh.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

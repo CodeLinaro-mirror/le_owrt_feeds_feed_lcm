@@ -32,7 +32,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxp
   DEPENDS += +libsahtrace
   DEPENDS += +libamxj
-  DEPENDS += +libyajl
+  DEPENDS += +yajl
   MENU:=1
 endef
 

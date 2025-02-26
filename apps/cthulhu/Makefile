@@ -5,7 +5,7 @@ PKG_VERSION:=v4.1.3
 SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=f448d517666de0e99fdd278f2fd90ff75fdaf69e
+PKG_SOURCE_VERSION:=dev_ppw209
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)

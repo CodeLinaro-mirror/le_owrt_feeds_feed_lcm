@@ -1,13 +1,16 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=image-authentication
-PKG_VERSION:=v0.1.0
+PKG_VERSION:=dev_ppw386
 SHORT_DESCRIPTION:=Rlyeh OCI image authentication plugin
 
-PKG_SOURCE:=image-authentication-v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication/-/archive/v0.1.0
-PKG_HASH:=275e5337eafd2b01167e4351410fd3895da30068dc8522264217af2d83cb4f4a
-PKG_BUILD_DIR:=$(BUILD_DIR)/image-authentication-v0.1.0
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=dev_ppw386
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

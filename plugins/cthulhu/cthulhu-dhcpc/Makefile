@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-dhcpc/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-dhcpc
-PKG_VERSION:=v1.3.0
+PKG_VERSION:=v1.3.2
 SHORT_DESCRIPTION:=Add dhcp client support to Cthulhu sandboxes
 
-PKG_SOURCE:=cthulhu-dhcpc-v1.3.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-dhcpc/-/archive/v1.3.0
-PKG_HASH:=154c2a7a3687356695acf07747dacb84cef8bfb0394c8e87b6900bf1d1a613ae
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-dhcpc-v1.3.0
+PKG_SOURCE:=cthulhu-dhcpc-v1.3.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-dhcpc/-/archive/v1.3.2
+PKG_HASH:=332a6e33ded807903a63577e7caa1370f017c02b1897b54dc902ff7c96f0b60d
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-dhcpc-v1.3.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

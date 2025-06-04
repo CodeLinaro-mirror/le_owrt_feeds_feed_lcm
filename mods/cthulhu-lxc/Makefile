@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-lxc
-PKG_VERSION:=v1.0.3
+PKG_VERSION:=v1.0.4
 SHORT_DESCRIPTION:=The module Cthulhu-LXC provides LXC support as a backend to Cthluhu
 
-PKG_SOURCE:=cthulhu-lxc-v1.0.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/archive/v1.0.3
-PKG_HASH:=69236970f4aa027e99a60335c12e15e741a8a9840c40d6f03066b9f099c5bb83
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lxc-v1.0.3
+PKG_SOURCE:=cthulhu-lxc-v1.0.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/archive/v1.0.4
+PKG_HASH:=c68cfba6f9bd0a1d6760ba4cb9332cafde92172fc00168c560943e44f25ae51d
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lxc-v1.0.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

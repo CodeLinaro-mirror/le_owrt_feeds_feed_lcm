@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila
-PKG_VERSION:=v3.1.2
+PKG_VERSION:=v3.1.3
 SHORT_DESCRIPTION:=High level LCM component
 
-PKG_SOURCE:=timingila-v3.1.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/timingila/-/archive/v3.1.2
-PKG_HASH:=08e9c1b87f9f1783623f951e43073680d278ba4ae9315d89124cd4988d053721
-PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-v3.1.2
+PKG_SOURCE:=timingila-v3.1.3.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/timingila/-/archive/v3.1.3
+PKG_HASH:=f9d8de746ec75e5ff30f3e9633fe594b1769d6b55c6c6e99218264b06eeedbee
+PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-v3.1.3
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -38,8 +38,8 @@ define Package/$(PKG_NAME)
   DEPENDS += +libamxm
   DEPENDS += +libamxo
   DEPENDS += +mod-dmproxy
-  DEPENDS += +libuuid
   DEPENDS += +liblcm
+  DEPENDS += +libuuid
   MENU:=1
 endef
 

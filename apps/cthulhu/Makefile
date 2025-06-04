@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu
-PKG_VERSION:=v4.1.5
+PKG_VERSION:=v4.1.6
 SHORT_DESCRIPTION:=Cthulhu manages the lifecycle of containers
 
-PKG_SOURCE:=cthulhu-v4.1.5.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v4.1.5
-PKG_HASH:=3d0e1849db2ce861fb273d7513dd510bfeb53375e650d2a40b61adb76e3cd6ca
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v4.1.5
+PKG_SOURCE:=cthulhu-v4.1.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu/-/archive/v4.1.6
+PKG_HASH:=d4e959b9b45ea4e921c24a75a5f8c2b0546a2edf879825fada3f96630bd05caa
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-v4.1.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -26,7 +28,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
-  SUBMENU:=Applications
+  SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
   URL:=https://gitlab.com/prpl-foundation/lcm/applications/cthulhu
   DEPENDS += +libamxc
@@ -50,8 +52,8 @@ define Package/$(PKG_NAME)
   DEPENDS += +kmod-fs-ext4
   DEPENDS += +f2fsck
   DEPENDS += +resize2fs
-  DEPENDS += +libacl
   DEPENDS += +acl
+  DEPENDS += +libacl
   MENU:=1
 endef
 

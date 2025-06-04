@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-networking/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-networking
-PKG_VERSION:=v0.2.4
+PKG_VERSION:=v0.2.6
 SHORT_DESCRIPTION:=Add networking support to Cthulhu containers
 
-PKG_SOURCE:=cthulhu-networking-v0.2.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-networking/-/archive/v0.2.4
-PKG_HASH:=e0361432d4b15b6c1c7a46bc9bf64f55c1eaf5d601c241b11538f6c28b3b08b1
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-networking-v0.2.4
+PKG_SOURCE:=cthulhu-networking-v0.2.6.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-networking/-/archive/v0.2.6
+PKG_HASH:=23a8378fd324d6a2aaf7db511aaa586b3404c77c92bab88bf4f63d9798e22b03
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-networking-v0.2.6
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

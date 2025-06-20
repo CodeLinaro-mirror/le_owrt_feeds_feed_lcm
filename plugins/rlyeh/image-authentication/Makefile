@@ -3,13 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=image-authentication
-PKG_VERSION:=v0.1.1
+PKG_VERSION:=dev_ppw-628
 SHORT_DESCRIPTION:=Rlyeh OCI image authentication plugin
 
-PKG_SOURCE:=image-authentication-v0.1.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication/-/archive/v0.1.1
-PKG_HASH:=1cc43f7e84955546d4672a1f0e3d46a6558567c76a37589523f413a68a05479c
-PKG_BUILD_DIR:=$(BUILD_DIR)/image-authentication-v0.1.1
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=dev_ppw-628
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

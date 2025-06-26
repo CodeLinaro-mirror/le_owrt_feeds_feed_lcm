@@ -5,7 +5,7 @@ PKG_VERSION:=feat-23
 SHORT_DESCRIPTION:=Add capabilities module
 
 PKG_SOURCE:=cthulhu-capabilities-feat-23.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-capabilities/-/tree/feat-23
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-capabilities/-/archive/feat-23
 PKG_HASH:=
 PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-capabilities-feat-23
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>

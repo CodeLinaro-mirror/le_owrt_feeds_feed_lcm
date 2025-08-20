@@ -3,13 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-networking
-PKG_VERSION:=v0.2.6
+PKG_VERSION:=LCM-843-lcm-integration-pcm
 SHORT_DESCRIPTION:=Add networking support to Cthulhu containers
 
-PKG_SOURCE:=cthulhu-networking-v0.2.6.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-networking/-/archive/v0.2.6
-PKG_HASH:=23a8378fd324d6a2aaf7db511aaa586b3404c77c92bab88bf4f63d9798e22b03
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-networking-v0.2.6
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=LCM-843-lcm-integration-pcm
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-networking.git
+PKG_MIRROR_HASH:=cde24db1460f2e02ec1642e41f1c9000312201eafbe7b3ea2061c7ef273620b2
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

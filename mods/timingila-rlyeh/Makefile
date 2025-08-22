@@ -1,13 +1,15 @@
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/modules/timingila-rlyeh/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila-rlyeh
-PKG_VERSION:=v1.1.1
+PKG_VERSION:=v1.2.0
 SHORT_DESCRIPTION:=The module timingila-rlyeh provides rlyeh support as a packager backend to timingila
 
-PKG_SOURCE:=timingila-rlyeh-v1.1.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-rlyeh/-/archive/v1.1.1
-PKG_HASH:=90ee6cde857d7beb11489ea9fca7ba4ffc7f5d6e20ada7e81af26c655c2cc6e1
-PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-rlyeh-v1.1.1
+PKG_SOURCE:=timingila-rlyeh-v1.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-rlyeh/-/archive/v1.2.0
+PKG_HASH:=1ce6ed5f680e57bc1b7fea0aef9d8874b19392361342092756a9ad47f5d244a8
+PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-rlyeh-v1.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

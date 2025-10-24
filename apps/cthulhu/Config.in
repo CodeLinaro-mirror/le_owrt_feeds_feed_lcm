@@ -20,6 +20,10 @@ config SAH_SERVICES_CTHULHU_INIT_STOP
     int "Cthulhu plugin stop order"
     default 60
 
+config SAH_SERVICES_CTHULHU_PROCD_SUPPORT
+    bool "Installs procd init script in stead of the default init script"
+    default PACKAGE_procd
+
 endmenu
 
 endif

@@ -31,6 +31,10 @@ config SAH_SERVICES_TIMINGILA_ADAPTER_CONTAINER
     string "Timingila adapter container so path"
     default "/usr/lib/timingila-cthulhu/timingila-cthulhu.so"
 
+config SAH_SERVICES_TIMINGILA_PROCD_SUPPORT
+    bool "Installs procd init script in stead of the default init script"
+    default PACKAGE_procd
+
 endmenu
 
 endif

@@ -1,14 +1,14 @@
 # WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
-# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc/-/blob/main/baf.yml instead
+# WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-rootfs-oci-bundle/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=cthulhu-lxc
-PKG_VERSION:=implem_LCM-849
-SHORT_DESCRIPTION:=The module Cthulhu-LXC provides LXC support as a backend to Cthluhu
+PKG_NAME:=cthulhu-rootfs-oci-bundle
+PKG_VERSION:=implem_LCM-850
+SHORT_DESCRIPTION:=This module provides support to create a rootfs from OCI bundles
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=implem_LCM-849
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc.git
+PKG_SOURCE_VERSION:=implem_LCM-850
+PKG_SOURCE_URL:=git@gitlab.com:prpl-foundation/lcm/modules/cthulhu-rootfs-oci-bundle.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -24,24 +24,19 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-lxc
+  URL:=https://gitlab.com/prpl-foundation/lcm/modules/cthulhu-rootfs-oci-bundle
   DEPENDS += +libamxc
   DEPENDS += +libamxm
-  DEPENDS += +libamxj
   DEPENDS += +libamxp
   DEPENDS += +libamxd
-  DEPENDS += +libamxo
   DEPENDS += +libsahtrace
-  DEPENDS += +liblxc
-  DEPENDS += +libcthulhu
   DEPENDS += +liblcm
-  DEPENDS += +yajl
-  DEPENDS += +lxc
+  DEPENDS += +libcthulhu
   MENU:=1
 endef
 
 define Package/$(PKG_NAME)/description
-	The module Cthulhu-LXC provides LXC support as a backend to Cthluhu
+	This module provides support to create a rootfs from OCI bundles
 endef
 
 define Build/Compile

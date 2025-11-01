@@ -1,13 +1,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=liblcm
-PKG_VERSION:=v0.3.1
+PKG_VERSION:=implem_LCM-850
 SHORT_DESCRIPTION:=The module liblcm provides common functions and datastructures for LCM components
 
-PKG_SOURCE:=liblcm-v0.3.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.3.1
-PKG_HASH:=a66b2a81e84f38ac7e088dbd33b310e1e13d86c3aa9d8de37534dc27fd918d6a
-PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.3.1
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=implem_LCM-850
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
+
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=rlyeh
-PKG_VERSION:=v2.6.0
+PKG_VERSION:=v2.7.0
 SHORT_DESCRIPTION:=Rlyeh is the local LCM repository
 
-PKG_SOURCE:=rlyeh-v2.6.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.6.0
-PKG_HASH:=72c0801cfb8fc7f5464a0b938824bbc7c23758f7a2fb2518d6ca3051d6a2db72
-PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.6.0
+PKG_SOURCE:=rlyeh-v2.7.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.7.0
+PKG_HASH:=4ebc05b67b7a4267f542d849885d707419bb476f63c8b3f2e71957dcb10c74b7
+PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.7.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -20,10 +20,10 @@ PKG_RELEASE:=1
 
 define SAHInit/Install
 	install -d $(1)/etc/rc.d/
-	if [[ "${CONFIG_PACKAGE_procd}" != "y" ]]; then \
-	ln -sfr $(1)/etc/init.d/$(COMPONENT) $(1)/etc/rc.d/S$(CONFIG_SAH_SERVICES_RLYEH_ORDER)$(COMPONENT); \
-	ln -sfr $(1)/etc/init.d/$(COMPONENT) $(1)/etc/rc.d/K$(CONFIG_SAH_SERVICES_RLYEH_ORDER)$(COMPONENT); \
-	fi
+ifneq ($(CONFIG_PACKAGE_procd),y)
+	ln -sfr $(1)/etc/init.d/$(COMPONENT) $(1)/etc/rc.d/S$(CONFIG_SAH_SERVICES_RLYEH_ORDER)$(COMPONENT)
+	ln -sfr $(1)/etc/init.d/$(COMPONENT) $(1)/etc/rc.d/K$(CONFIG_SAH_SERVICES_RLYEH_ORDER)$(COMPONENT)
+endif
 endef
 
 include $(INCLUDE_DIR)/package.mk

@@ -6,7 +6,7 @@ SHORT_DESCRIPTION:=The module timingila-celephais provides celephais support as 
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-celephais.git
-PKG_SOURCE_VERSION:=b0a0b1f28500ff17ad20b23980404a0f78750e43
+PKG_SOURCE_VERSION:=a60adcfba545c1b6800f9da0e1d2c8b3d3e489fa
 
 PKG_MAINTAINER:=Consult Red <info@consult.red>
 PKG_LICENSE:=BSD-2-Clause-Patent

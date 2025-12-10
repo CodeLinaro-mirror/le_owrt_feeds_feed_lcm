@@ -6,7 +6,8 @@ SHORT_DESCRIPTION:= Celephais is a repository application for OCI bundles for us
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/celephais.git
-PKG_SOURCE_VERSION:=bbd755209e0d2d047a99ba862fbed792ec5326b3
+PKG_MIRROR_HASH:=40637451959f327511430c6d018670f13aee2d00f04c0dd27d39110a210f89d6
+PKG_SOURCE_VERSION:=9b6a011c13b3712acf11137eab5c8ad892690cc4
 
 PKG_MAINTAINER:=Consult Red <info@consult.red>
 PKG_LICENSE:=BSD-2-Clause-Patent

@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/modules/timingila-cthulhu/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila-cthulhu
-PKG_VERSION:=v3.2.1
+PKG_VERSION:=v3.3.0
 SHORT_DESCRIPTION:=The module timingila-cthulhu provides cthulhu support as a container backend to timingila
 
-PKG_SOURCE:=timingila-cthulhu-v3.2.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-cthulhu/-/archive/v3.2.1
-PKG_HASH:=ad185b1a73a976f01e0857bf894ada88548beb5159525e2f4d89b5218d064587
-PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-cthulhu-v3.2.1
+PKG_SOURCE:=timingila-cthulhu-v3.3.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-cthulhu/-/archive/v3.3.0
+PKG_HASH:=9d9d6ac60fb23c6b6f0ca2dcae5692489ff812ab816d5115943655d3ecc31bd9
+PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-cthulhu-v3.3.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

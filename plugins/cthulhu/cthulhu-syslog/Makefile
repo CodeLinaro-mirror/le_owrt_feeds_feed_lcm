@@ -3,13 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-syslog
-PKG_VERSION:=v0.1.0
+PKG_VERSION:=dev_PCF-2373
 SHORT_DESCRIPTION:=Add syslog plugin
 
-PKG_SOURCE:=cthulhu-syslog-v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-syslog/-/archive/v0.1.0
-PKG_HASH:=1e827077c9ca86eb20944d021cbe1c7fb9a7e86a061a1aa3bdf8d328eb1cc3b3
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-syslog-v0.1.0
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=dev_PCF-2373
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-syslog.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

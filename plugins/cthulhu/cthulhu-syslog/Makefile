@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-syslog/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-syslog
-PKG_VERSION:=v0.1.0
+PKG_VERSION:=v0.2.0
 SHORT_DESCRIPTION:=Add syslog plugin
 
-PKG_SOURCE:=cthulhu-syslog-v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-syslog/-/archive/v0.1.0
-PKG_HASH:=1e827077c9ca86eb20944d021cbe1c7fb9a7e86a061a1aa3bdf8d328eb1cc3b3
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-syslog-v0.1.0
+PKG_SOURCE:=cthulhu-syslog-v0.2.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-syslog/-/archive/v0.2.0
+PKG_HASH:=7b17bcfabef3ef2d8b9ed295a94674d8979fb0150f36866cd238581fedb65cc3
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-syslog-v0.2.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

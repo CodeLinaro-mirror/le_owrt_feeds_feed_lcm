@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=liblcm
-PKG_VERSION:=v0.4.1
+PKG_VERSION:=v0.4.2
 SHORT_DESCRIPTION:=The module liblcm provides common functions and datastructures for LCM components
 
-PKG_SOURCE:=liblcm-v0.4.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.4.1
-PKG_HASH:=f048d485743bdeb75b3a2de54b1b2adbb1b8b51374e98bb79653fbde54aa965e
-PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.4.1
+PKG_SOURCE:=liblcm-v0.4.2.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/liblcm/-/archive/v0.4.2
+PKG_HASH:=7e9e6c155af0f772a1fd8ce6df6c5f2e46002ccaf94f43bb3d4e83f8a5a2bc10
+PKG_BUILD_DIR:=$(BUILD_DIR)/liblcm-v0.4.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

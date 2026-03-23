@@ -2,13 +2,13 @@
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=image-authentication
+PKG_NAME:=timingila-rlyeh-security
 PKG_VERSION:=dev_PCF-2279
-SHORT_DESCRIPTION:=Rlyeh OCI image authentication plugin
+SHORT_DESCRIPTION:=Timingila Rlyeh security plugin for Timingila-Rlyeh
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=dev_PCF-2279
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication.git
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/timingila-rlyeh/timingila-rlyeh-security.git
 PKG_MIRROR_HASH:=skip
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
@@ -24,20 +24,19 @@ define Package/$(PKG_NAME)
   CATEGORY:=prpl Foundation
   SUBMENU:=Life Cycle Management (LCM)
   TITLE:=$(SHORT_DESCRIPTION)
-  URL:=https://gitlab.com/prpl-foundation/lcm/plugins/rlyeh/image-authentication
+  URL:=https://gitlab.com/prpl-foundation/lcm/plugins/timingila-rlyeh/timingila-rlyeh-security
   DEPENDS += +libamxc
   DEPENDS += +libamxm
   DEPENDS += +libamxp
   DEPENDS += +libamxd
   DEPENDS += +libsahtrace
-  DEPENDS += +librlyeh
-  DEPENDS += +liblcm
-  DEPENDS += +librnp
+  DEPENDS += +timingila
+  DEPENDS += +timingila-rlyeh
   MENU:=1
 endef
 
 define Package/$(PKG_NAME)/description
-	Rlyeh OCI image authentication plugin
+	Timingila Rlyeh security plugin for Timingila-Rlyeh
 endef
 
 define Build/Compile

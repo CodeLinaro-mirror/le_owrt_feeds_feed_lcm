@@ -3,13 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-capabilities
-PKG_VERSION:=v0.2.0
+PKG_VERSION:=dev_PPW-1735
 SHORT_DESCRIPTION:=Add capabilities module
 
-PKG_SOURCE:=cthulhu-capabilities-v0.2.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-capabilities/-/archive/v0.2.0
-PKG_HASH:=036ec871f721f88109ab12d089396a0b761253c1a382e14ab930249611f9397a
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-capabilities-v0.2.0
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=dev_PPW-1735
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-capabilities.git
+PKG_MIRROR_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

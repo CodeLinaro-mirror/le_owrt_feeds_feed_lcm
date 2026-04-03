@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-lpm
-PKG_VERSION:=v0.1.0
+PKG_VERSION:=v0.3.1
 SHORT_DESCRIPTION:=Local policy manager module
 
-PKG_SOURCE:=cthulhu-lpm-v0.1.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-lpm/-/archive/v0.1.0
-PKG_HASH:=0ee87c328c21a3bd205549fae6d4d658cfa9772b6062e0041b78f07922926006
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lpm-v0.1.0
+PKG_SOURCE:=cthulhu-lpm-v0.3.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-lpm/-/archive/v0.3.1
+PKG_HASH:=1b5ff2459acff962bc2615a681933d579f3e78fe04994154022d058c1f213145
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-lpm-v0.3.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

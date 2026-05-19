@@ -1,0 +1,20 @@
+config PACKAGE_cthulhu-plugin-usp
+    tristate
+    select SAH_PLUGIN_CTHULHU_USP
+
+if PACKAGE_cthulhu-plugin-usp
+
+menu "Select cthulhu-plugin-usp build options"
+    depends on PACKAGE_cthulhu-plugin-usp
+
+config SAH_PLUGIN_CTHULHU_USP
+    bool "Build Cthulhu USP plugin"
+    default n
+
+config PLUGIN_USP_PASSWORD_LENGTH
+    int "Length of the generated password for USP services, must be between 32 and 248"
+    default 32
+
+endmenu
+
+endif

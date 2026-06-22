@@ -1,15 +1,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=botan
-PKG_VERSION:=2.19.4
-PKG_RELEASE:=3
+PKG_VERSION:=3.12.0
+PKG_RELEASE:=1
 PKG_CPE_ID:=cpe:/a:botan_project:botan
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 
 PKG_SOURCE:=Botan-$(PKG_VERSION).tar.xz
 PKG_BUILD_DIR:=$(BUILD_DIR)/Botan-$(PKG_VERSION)
 PKG_SOURCE_URL:=https://botan.randombit.net/releases/
-PKG_HASH:=5a3a88ef6433e97bcab0efa1ed60c6197e4ada9d9d30bc1c47437bf89b97f276
+PKG_HASH:=5370f98dc15f8c222ee1ce52cd61c8756a53be0dc57cc4c1b0714d5a09ad74fb
 
 PKG_USE_MIPS16:=0
 PKG_LICENSE:=BSD-2-Clause
@@ -20,12 +20,12 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/botan/Default
   SUBMENU:=SSL
-  TITLE:=Crypto and TLS for C++11
+  TITLE:=Crypto and TLS for Modern C++
   URL:=https://botan.randombit.net
 endef
 
 define Package/botan/Default/description
-  Botan (Japanese for peony) is a cryptography library written in C++11 and
+  Botan (Japanese for peony) is a cryptography library written in modern C++ and
   released under the permissive Simplified BSD license.
 endef
 
@@ -47,8 +47,10 @@ CONFIGURE_CMD = ./configure.py
 
 CONFIGURE_ARGS = \
 	--cpu="$(ARCH)" \
-	--cc-bin="$(TOOLCHAIN_DIR)/bin/$(TARGET_CXX)" \
+	--os="linux" \
+	--cc-bin="$(TARGET_CROSS)g++" \
 	--cc="gcc" \
+	--ar-command="$(TARGET_AR)" \
 	--program-suffix="" \
 	--prefix=$(CONFIGURE_PREFIX) \
 	--exec-prefix=$(CONFIGURE_PREFIX) \
@@ -61,7 +63,9 @@ CONFIGURE_ARGS = \
 	--mandir=$(CONFIGURE_PREFIX)/man \
 	--infodir=$(CONFIGURE_PREFIX)/info \
 	--optimize-for-size \
-	$(DISABLE_IPV6)
+	--build-targets=shared,static \
+	--no-install-python-module \
+	--without-documentation
 
 ifeq ($(CONFIG_SOFT_FLOAT),y)
 CONFIGURE_ARGS += --disable-neon

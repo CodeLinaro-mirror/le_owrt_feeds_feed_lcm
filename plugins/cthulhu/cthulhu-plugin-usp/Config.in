@@ -15,6 +15,11 @@ config PLUGIN_USP_PASSWORD_LENGTH
     int "Length of the generated password for USP services, must be between 32 and 248"
     default 32
 
+config CTHULHU_MAX_USP_CONNECTIONS
+    int "Maximum number of USP connections"
+    range 1 16
+    default 16
+
 endmenu
 
 endif

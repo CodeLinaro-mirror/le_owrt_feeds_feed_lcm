@@ -1,0 +1,182 @@
+{
+    "Device.SoftwareModules.": {
+        "Order": 1,
+        "Param": "r--n"
+    },
+    "Device.SoftwareModules.ExecEnv.": {
+        "Order": 2,
+        "Param": "r--n"
+    },
+    "Device.SoftwareModules.ExecEnv.*.": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.LocalManagement.": {
+        "Order": 2,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.NetworkConfig.": {
+        "Order": 2,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.DeploymentUnit.": {
+        "Order": 2,
+        "Param": "r--n"
+    },
+    "Device.SoftwareModules.DeploymentUnit.*.VendorConfigList": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.DeploymentUnit.*.VendorLogList": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.": {
+        "Order": 2,
+        "Param": "r--n"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AutoRestart.": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.EnvVariable.": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.Extensions.": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.HostObject.": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.NetworkConfig.": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.Alias": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedCPUPercent": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedDiskSpace": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedEUGID": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedEUUID": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedHostGID": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedHostUID": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AllocatedMemory": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AssociatedProcessList": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AutoStart": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AvailableDiskSpace": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AvailableMemory": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.AvailableUserRoleCapabilities": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.CreationTime": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.Description": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.DiskSpaceInUse": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.EUID": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.ExecEnvLabel": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.ExecutionEnvRef": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.ExecutionFaultCode": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.ExecutionFaultMessage": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.MemoryInUse": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.References": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.RequiredUserRoles": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.RunLevel": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.Uptime": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.Vendor": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.VendorConfigList": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.VendorLogList": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.Version": {
+        "Order": 3,
+        "Param": "----"
+    },
+    "Device.SoftwareModules.ExecutionUnit.*.X_PRPL-COM_VasStatus": {
+        "Order": 3,
+        "Param": "----"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "Device.Cthulhu.": {
+        "Order": 1,
+        "Param": "r--n"
+    },
+    "Cthulhu.": {
+        "Order": 2,
+        "Param": "r--n"
+    }
+}

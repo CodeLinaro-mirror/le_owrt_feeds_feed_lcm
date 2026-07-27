@@ -1,0 +1,3 @@
+%config {
+    %global "proxy-object.'Device.Cthulhu.'" = "Cthulhu.";
+}

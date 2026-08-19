@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-pcm
-PKG_VERSION:=v0.3.1
+PKG_VERSION:=v0.4.0
 SHORT_DESCRIPTION:=Add PCM persistence management support
 
-PKG_SOURCE:=cthulhu-pcm-v0.3.1.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-pcm/-/archive/v0.3.1
-PKG_HASH:=cdb00e07396c0b8e5f54e16d1ecb00e48d80a43ce3946ca6967b817ca5954cbf
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-pcm-v0.3.1
+PKG_SOURCE:=cthulhu-pcm-v0.4.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-pcm/-/archive/v0.4.0
+PKG_HASH:=7f7fbc396c29b4f1d1c3d1a4ff6fd2d5c7c5fa53ddbdf9219bd9fd6f8245ff0a
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-pcm-v0.4.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

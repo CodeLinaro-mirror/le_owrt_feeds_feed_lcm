@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-plugin-usp
-PKG_VERSION:=v0.4.3
+PKG_VERSION:=v0.4.4
 SHORT_DESCRIPTION:=This cthulhu plugin will configure usp on the host
 
-PKG_SOURCE:=cthulhu-plugin-usp-v0.4.3.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/archive/v0.4.3
-PKG_HASH:=8b83782d620a2656fbee2c70cf5b979d8073dec5f869fa95780956947e669424
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-plugin-usp-v0.4.3
+PKG_SOURCE:=cthulhu-plugin-usp-v0.4.4.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/archive/v0.4.4
+PKG_HASH:=552531118a9c771a6989b622bd9bea432d67eb506a1aa8bd0831fb6c53d40dec
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-plugin-usp-v0.4.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

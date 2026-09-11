@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila-cthulhu
-PKG_VERSION:=v3.4.0
+PKG_VERSION:=v3.4.1
 SHORT_DESCRIPTION:=The module timingila-cthulhu provides cthulhu support as a container backend to timingila
 
-PKG_SOURCE:=timingila-cthulhu-v3.4.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-cthulhu/-/archive/v3.4.0
-PKG_HASH:=ccc3686d1086005524d2452aa8912c4e65f085f6b3171f36b494e20e7a89bbe1
-PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-cthulhu-v3.4.0
+PKG_SOURCE:=timingila-cthulhu-v3.4.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/modules/timingila-cthulhu/-/archive/v3.4.1
+PKG_HASH:=f607464ae299c57f6e0f8f3705014e92cedc96b766f257a579c2f47b0b273d99
+PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-cthulhu-v3.4.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

@@ -6,9 +6,10 @@ PKG_NAME:=rlyeh
 PKG_VERSION:=v2.10.0
 SHORT_DESCRIPTION:=Rlyeh is the local LCM repository
 
-PKG_SOURCE:=rlyeh-v2.10.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh/-/archive/v2.10.0
-PKG_HASH:=83c3cb9a331b2986a94d9c2a3dce1cc7eb1fa973576a11009f632fc3d4433801
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=ff22a75130ac6ff58005f23cdfd2fea94e03f234
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/rlyeh.git
+PKG_MIRROR_HASH:=af777d44151678a6e83a8a74ee3ac0cdf648f8ffb8d4a37b245b039d31ecda80
 PKG_BUILD_DIR:=$(BUILD_DIR)/rlyeh-v2.10.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -16,7 +17,7 @@ PKG_LICENSE_FILES:=LICENSE
 
 COMPONENT:=rlyeh
 
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 define SAHInit/Install
 	install -d $(1)/etc/rc.d/

@@ -6,16 +6,17 @@ PKG_NAME:=librlyeh
 PKG_VERSION:=v1.5.2
 SHORT_DESCRIPTION:=The module librlyeh provides functions and datastructures to interact with OCI registries
 
-PKG_SOURCE:=librlyeh-v1.5.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh/-/archive/v1.5.2
-PKG_HASH:=eb8c9bf05da8d864dcb48e64768c1d5e69198e6f6e95db36a378f9785ff36422
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=ecb86c772c8ec792f33eac567818435aed759482
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/libraries/librlyeh.git
+PKG_MIRROR_HASH:=45feac8597fdfdf6d7a5cc955d7890c9958fdbc797645025a6ce326709dd614d
 PKG_BUILD_DIR:=$(BUILD_DIR)/librlyeh-v1.5.2
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
 
 
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 include $(INCLUDE_DIR)/package.mk
 

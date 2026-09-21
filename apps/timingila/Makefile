@@ -3,13 +3,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=timingila
-PKG_VERSION:=v3.10.2
+PKG_VERSION:=v3.11.0
 SHORT_DESCRIPTION:=High level LCM component
 
-PKG_SOURCE:=timingila-v3.10.2.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/timingila/-/archive/v3.10.2
-PKG_HASH:=addd32d880378595205026722ef38b141d205688421f25d6bb3d8d6e1c0f49e8
-PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-v3.10.2
+PKG_SOURCE:=timingila-v3.11.0.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/applications/timingila/-/archive/v3.11.0
+PKG_HASH:=8c78b034248d7f628a326e0206a8856c9ced198f51b69e966c5b3723cfe11c05
+PKG_BUILD_DIR:=$(BUILD_DIR)/timingila-v3.11.0
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE

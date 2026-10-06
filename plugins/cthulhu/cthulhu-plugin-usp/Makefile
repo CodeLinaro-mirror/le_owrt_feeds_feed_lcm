@@ -3,13 +3,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-plugin-usp
-PKG_VERSION:=v0.4.4
+PKG_VERSION:=dev_PPW-2430
 SHORT_DESCRIPTION:=This cthulhu plugin will configure usp on the host
 
-PKG_SOURCE:=cthulhu-plugin-usp-v0.4.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/archive/v0.4.4
-PKG_HASH:=552531118a9c771a6989b622bd9bea432d67eb506a1aa8bd0831fb6c53d40dec
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-plugin-usp-v0.4.4
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_VERSION:=dev_PPW-2430
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp.git
+PKG_HASH:=skip
+PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
@@ -37,7 +38,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libuuid
   DEPENDS += +libuuid
   DEPENDS += +libamxrt
-  DEPENDS += +libpass
+  DEPENDS += +libpassgen
   MENU:=1
 endef
 

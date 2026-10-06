@@ -6,9 +6,9 @@ PKG_NAME:=cthulhu-plugin-usp
 PKG_VERSION:=v0.4.4
 SHORT_DESCRIPTION:=This cthulhu plugin will configure usp on the host
 
-PKG_SOURCE:=cthulhu-plugin-usp-v0.4.4.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/archive/v0.4.4
-PKG_HASH:=552531118a9c771a6989b622bd9bea432d67eb506a1aa8bd0831fb6c53d40dec
+PKG_SOURCE:=cthulhu-plugin-usp-dev_PPW-2430.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/archive/dev_PPW-2430
+PKG_HASH:=9c5d26f8e701a9ff02d68b02e7fd0eaba188dba57a7400110ff8d5f3d47f70d6
 PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-plugin-usp-v0.4.4
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
@@ -37,7 +37,7 @@ define Package/$(PKG_NAME)
   DEPENDS += +libuuid
   DEPENDS += +libuuid
   DEPENDS += +libamxrt
-  DEPENDS += +libpass
+  DEPENDS += +libpassgen
   MENU:=1
 endef
 

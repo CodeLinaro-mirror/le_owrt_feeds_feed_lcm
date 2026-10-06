@@ -6,7 +6,7 @@ PKG_NAME:=cthulhu-plugin-usp
 PKG_VERSION:=v0.4.4
 SHORT_DESCRIPTION:=This cthulhu plugin will configure usp on the host
 
-PKG_SOURCE:=cthulhu-plugin-usp-dev_PPW-2430.gz
+PKG_SOURCE:=cthulhu-plugin-usp-dev_PPW-2430.tar.gz
 PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-plugin-usp/-/archive/dev_PPW-2430
 PKG_HASH:=9c5d26f8e701a9ff02d68b02e7fd0eaba188dba57a7400110ff8d5f3d47f70d6
 PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-plugin-usp-v0.4.4

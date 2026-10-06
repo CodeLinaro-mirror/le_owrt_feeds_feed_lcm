@@ -1,15 +1,15 @@
-# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling (version v2.39.3)
+# WARNING: Automatically generated file using BAF (Build system Agnostic File) tooling
 # WARNING: You should contribute changes to https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-pcm/-/blob/main/baf.yml instead
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=cthulhu-pcm
-PKG_VERSION:=v0.5.0
+PKG_VERSION:=v0.7.1
 SHORT_DESCRIPTION:=Add PCM persistence management support
 
-PKG_SOURCE:=cthulhu-pcm-v0.5.0.tar.gz
-PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-pcm/-/archive/v0.5.0
-PKG_HASH:=68aa54f0588ae3015a11e445a1605127d065ee37727f4472f10fde949b4e3ace
-PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-pcm-v0.5.0
+PKG_SOURCE:=cthulhu-pcm-v0.7.1.tar.gz
+PKG_SOURCE_URL:=https://gitlab.com/prpl-foundation/lcm/plugins/cthulhu/cthulhu-pcm/-/archive/v0.7.1
+PKG_HASH:=ca2afc401f815349bab2c0b6527f3bc9af76d9643c08157b023762f6aba66857
+PKG_BUILD_DIR:=$(BUILD_DIR)/cthulhu-pcm-v0.7.1
 PKG_MAINTAINER:=Soft At Home <support.opensource@softathome.com>
 PKG_LICENSE:=BSD-2-Clause-Patent
 PKG_LICENSE_FILES:=LICENSE
